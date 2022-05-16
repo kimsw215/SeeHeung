@@ -11,8 +11,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SeeHeung"
+        android:theme="@style/Theme.SeeHeung.No"
         tools:targetApi="31">
+        <activity
+            android:name=".SouthMap"
+            android:exported="false" />
+        <activity
+            android:name=".EastMap"
+            android:exported="false" />
+        <activity
+            android:name=".NorthMap"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
