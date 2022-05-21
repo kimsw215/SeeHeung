@@ -1,5 +1,6 @@
 package kr.ac.kpu.ce2019152012.seeheung.MainFragments
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,12 +13,11 @@ import kr.ac.kpu.ce2019152012.seeheung.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-
-    private lateinit var db: FirebaseFirestore
+    val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setup2()
+
     }
 
     // 화면 구성
@@ -37,14 +37,6 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-    }
-
-    fun setup2() {
-        db = FirebaseFirestore.getInstance()
-        val settings = firestoreSettings {
-            isPersistenceEnabled = true
-        }
-        db.firestoreSettings = settings
     }
 
     override fun onDestroyView() {
