@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/activity_home_fragment.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/activity_main.xml" value="0.128" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/activity_north_map.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/center_classify.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/fragment_home.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/fragment_search.xml" value="0.2" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/fragment_serach.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/fragment_setting.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25625" />
         <entry key="..\:/Users/kyq01/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
