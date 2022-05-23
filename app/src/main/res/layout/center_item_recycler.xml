@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingHorizontal="10dp"
-    android:paddingVertical="10dp"
+    android:layout_width="160dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="15dp"
     android:background="@drawable/center_item_layout_shape">
 
     <ImageView
         android:id="@+id/img_rv_photo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/icon_lighthouse"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        android:src="@drawable/icon_lighthouse" />
 
     <TextView
         android:id="@+id/text_rv_name"
@@ -27,36 +22,24 @@
         android:layout_height="wrap_content"
         android:text="오이도 빨간 등대"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_rv_photo"
-        app:layout_constraintVertical_bias="0.015" />
-
-    <TextView
-        android:id="@+id/text_rv_tag_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="#빨간 등대"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_rv_name"
-        app:layout_constraintVertical_bias="0.024" />
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/text_rv_tag_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#빨간 등대"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_rv_tag_1"
-        app:layout_constraintTop_toBottomOf="@+id/text_rv_tag_1"
-        app:layout_constraintVertical_bias="0.014" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text_rv_tag_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#빨간 등대"
+        android:textSize="14dp"
+        android:layout_marginTop="5dp"
+/>
+
+</LinearLayout>

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/drawable/center_item_layout_shape.xml" value="0.1955" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/drawable/item_layout_shape.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/drawable/north_item_layout_shape.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/drawable/south_item_layout_shape.xml" value="0.1" />
@@ -10,7 +11,7 @@
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/activity_main.xml" value="0.128" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/activity_north_map.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/center_classify.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/center_item_recycler.xml" value="0.264" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/center_item_recycler.xml" value="0.4" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/fragment_center_park.xml" value="0.25729166666666664" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/fragment_home.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/SeeHeung/app/src/main/res/layout/fragment_search.xml" value="0.2" />

@@ -12,15 +12,17 @@ import com.bumptech.glide.Glide
 import kr.ac.kpu.ce2019152012.seeheung.ClassFile.HashDataVo
 import kr.ac.kpu.ce2019152012.seeheung.R
 
-class ListAdapterGrid(private val context: Context):
+class ListAdapterGrid:
     RecyclerView.Adapter<ListAdapterGrid.ViewHolder>() {
 
     var datas = mutableListOf<HashDataVo>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.center_item_recycler,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.center_item_recycler,parent,false)
         return ViewHolder(view)
     }
+
+
 
     override fun getItemCount(): Int = datas.size
 
