@@ -17,6 +17,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestoreSettings
 import kr.ac.kpu.ce2019152012.seeheung.CenterFragments.CenterClassifyFragment
+import kr.ac.kpu.ce2019152012.seeheung.CenterFragments.NorthClassifyFragment
 import kr.ac.kpu.ce2019152012.seeheung.MainActivity
 import kr.ac.kpu.ce2019152012.seeheung.R
 import kr.ac.kpu.ce2019152012.seeheung.databinding.ActivityMainBinding
@@ -27,7 +28,7 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
 
     //북부
-    //private val fragmentA
+    private val fragmentA = NorthClassifyFragment()
     //중부
     private val fragmentB = CenterClassifyFragment()
     //남부
@@ -52,6 +53,11 @@ class HomeFragment : Fragment() {
     // 기능 넣는 곳
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // 북부
+        binding.NBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_northClassifyFragment2)
+        }
 
         binding.CBtn.setOnClickListener {
             it.findNavController().navigate(R.id.action_homeFragment_to_centerClassifyFragment2)
