@@ -16,5 +16,4 @@
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         tools:listitem="@layout/center_item_recycler" />
 
-
 </LinearLayout>

@@ -11,20 +11,20 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.replace
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestoreSettings
 import kr.ac.kpu.ce2019152012.seeheung.CenterFragments.CenterClassifyFragment
 import kr.ac.kpu.ce2019152012.seeheung.MainActivity
 import kr.ac.kpu.ce2019152012.seeheung.R
+import kr.ac.kpu.ce2019152012.seeheung.databinding.ActivityMainBinding
 import kr.ac.kpu.ce2019152012.seeheung.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-
-    val db = FirebaseFirestore.getInstance()
-
-    private var transaction : FragmentManager? = null
 
     //북부
     //private val fragmentA
@@ -33,11 +33,8 @@ class HomeFragment : Fragment() {
     //남부
     //private val fragmentC
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     // 화면 구성
@@ -56,29 +53,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // 북부코드로 바꿔야됨
-        // 북부
-        binding.NBtn.setOnClickListener {
-            Toast.makeText(requireContext(),"아직 안만들었음",Toast.LENGTH_SHORT).show()
-        }
-
-        // 중부
         binding.CBtn.setOnClickListener {
-            fragTofrag(fragmentB)
+            it.findNavController().navigate(R.id.action_homeFragment_to_centerClassifyFragment2)
         }
 
-        // 남부코드로 바꿔야됨
-        // 남부
-        binding.NBtn.setOnClickListener {
-            Toast.makeText(requireContext(),"아직 안만들었음",Toast.LENGTH_SHORT).show()
-        }
-
-    }
-
-    fun fragTofrag(fragment: Fragment){
-        val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainer,fragment)
-        transaction.commit()
     }
 
     override fun onDestroyView() {

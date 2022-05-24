@@ -5,13 +5,22 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestoreSettings
 import kr.ac.kpu.ce2019152012.seeheung.Adapter.ListAdapterGrid
 import kr.ac.kpu.ce2019152012.seeheung.ClassFile.HashDataVo
+import kr.ac.kpu.ce2019152012.seeheung.MainActivity
 import kr.ac.kpu.ce2019152012.seeheung.R
 import kr.ac.kpu.ce2019152012.seeheung.databinding.CenterClassifyBinding
 
@@ -46,6 +55,7 @@ class CenterClassifyFragment : Fragment() {
     // 기능 넣는 곳
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
 
     private fun initRecycler(){
