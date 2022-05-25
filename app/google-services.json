@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "948308299410",
-    "project_id": "seeheung-f34a2",
-    "storage_bucket": "seeheung-f34a2.appspot.com"
+    "project_number": "8532066719",
+    "project_id": "seeheung-8949d",
+    "storage_bucket": "seeheung-8949d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:948308299410:android:8c7f8822815788cc80e04b",
+        "mobilesdk_app_id": "1:8532066719:android:18b43c4e58f78b4b353daa",
         "android_client_info": {
           "package_name": "kr.ac.kpu.ce2019152012.seeheung"
         }
       },
       "oauth_client": [
         {
-          "client_id": "948308299410-fa6bvqhvprq7acuomskij26mg5rq2f3r.apps.googleusercontent.com",
+          "client_id": "8532066719-qn0v11bjrglc3oc7rpbt6h2opk84cl9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.ac.kpu.ce2019152012.seeheung",
+            "certificate_hash": "bd997494b34d8fa57f576ec4541bcc7f8784c787"
+          }
+        },
+        {
+          "client_id": "8532066719-34l3toeg2g0ta2g1s0e60pdkg3v077dm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBLfHGO5GsVTB0Er_BSH6cOLqnZCGNq_Fc"
+          "current_key": "AIzaSyCQbyWCOpPrdUkuVv7SqFzHJI47I1qDThQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "948308299410-fa6bvqhvprq7acuomskij26mg5rq2f3r.apps.googleusercontent.com",
+              "client_id": "8532066719-34l3toeg2g0ta2g1s0e60pdkg3v077dm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
