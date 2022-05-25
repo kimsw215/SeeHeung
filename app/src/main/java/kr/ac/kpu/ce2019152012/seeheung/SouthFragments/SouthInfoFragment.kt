@@ -1,15 +1,14 @@
 package kr.ac.kpu.ce2019152012.seeheung.CenterFragments
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kr.ac.kpu.ce2019152012.seeheung.databinding.FragmentCenterParkBinding
+import kr.ac.kpu.ce2019152012.seeheung.databinding.FragmentSouthInfoBinding
 
-class CenterPark : Fragment() {
-    private var _binding : FragmentCenterParkBinding?= null
+class SouthInfoFragment : Fragment() {
+    private var _binding : FragmentSouthInfoBinding?= null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +20,7 @@ class CenterPark : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentCenterParkBinding.inflate(inflater,container,false)
+        _binding = FragmentSouthInfoBinding.inflate(inflater,container,false)
         val view = binding.root
         return view
     }

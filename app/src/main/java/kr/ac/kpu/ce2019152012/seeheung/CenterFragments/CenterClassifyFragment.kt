@@ -12,6 +12,7 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
+import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -30,10 +31,10 @@ class CenterClassifyFragment : Fragment() {
     private val binding get() = _binding!!
 
     // Adapter 변수 선언
-    lateinit var listAdapter : ListAdapterGrid
+    private lateinit var listAdapter : ListAdapterGrid
 
     // gridManager
-    lateinit var Gmanager : GridLayoutManager
+    private lateinit var Gmanager : GridLayoutManager
 
     // 중부 테마 정보 변수 선언
     val datas = mutableListOf<HashDataVo>()
@@ -48,6 +49,11 @@ class CenterClassifyFragment : Fragment() {
         val view = binding.root
 
         initRecycler()
+        val bottomNavigationView = requireActivity().findViewById<BottomNavigationView>(R.id.bottom_nav)
+        val navHostUserFragment = requireActivity().supportFragmentManager
+            .findFragmentById(R.id.fragmentContainer) as NavHostFragment
+        val navController = navHostUserFragment.navController
+        NavigationUI.setupWithNavController(bottomNavigationView, navController)
 
         return view
     }
@@ -70,7 +76,6 @@ class CenterClassifyFragment : Fragment() {
         }
 
         datas.apply{
-            add(HashDataVo("오이도 빨간 등대", "#오이도 랜드마크 ", "#전망대", R.drawable.icon_lighthouse))
             add(HashDataVo("물왕 저수지", "#카페", "#레스토랑", R.drawable.icon_park))
             add(HashDataVo("능곡선사유적공원", "#아름다운 풍경", "#최대 4인 숙박", R.drawable.icon_camping))
             add(HashDataVo("영모재", "#한옥", "#고요", R.drawable.icon_hanok))
@@ -83,21 +88,11 @@ class CenterClassifyFragment : Fragment() {
             add(HashDataVo("능곡선사유적공원", "#체험교육", "#선사유적", R.drawable.icon_park))
             add(HashDataVo("월곶포구", "#로맨틱 데이트", "#아름다운석양", R.drawable.icon_placeholder))
             add(HashDataVo("신세계 프리미엄 아울렛", "#스페린 건축", "#반려견 산책가능", R.drawable.icon_market))
-            add(HashDataVo("옥구공원", "#서해일몰", "#환경친화적공원", R.drawable.icon_park))
-            add(HashDataVo("오이도 전통 수산시장", "#시흥대표광광지", "#싱싱한해산물", R.drawable.icon_fish_market))
-            add(HashDataVo("생금집", "#시흥유적", "#전통가옥", R.drawable.icon_parchment))
-            add(HashDataVo("맑은물상상누리", "#재활용도시랜드마크", "#자연친화적", R.drawable.icon_museum))
-            add(HashDataVo("웨이브파크", "최대규모서핑", "#4계절가능", R.drawable.icon_surfing))
-            add(HashDataVo("오이도박물관", "#그해우리는", "#체험박물관", R.drawable.icon_museum))
-            add(HashDataVo("시흥 도일시장", "#5일장", "#재래시장", R.drawable.icon_market))
-            add(HashDataVo("도일 아지다트", "#마을카페", "#플리마켓", R.drawable.icon_placeholder))
-            add(HashDataVo("배곧 한울 공원", "#생명도시", "#자연을 품은도시", R.drawable.icon_park))
 
             listAdapter.datas = datas
             listAdapter.notifyDataSetChanged()
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

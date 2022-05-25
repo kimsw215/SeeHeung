@@ -27,13 +27,6 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    //북부
-    private val fragmentA = NorthClassifyFragment()
-    //중부
-    private val fragmentB = CenterClassifyFragment()
-    //남부
-    //private val fragmentC
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -56,15 +49,18 @@ class HomeFragment : Fragment() {
 
         // 북부
         binding.NBtn.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_northClassifyFragment2)
+            findNavController().navigate(R.id.action_homeFragment_to_northClassifyFragment)
         }
-
+        // 중부
         binding.CBtn.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_centerClassifyFragment2)
+            findNavController().navigate(R.id.action_homeFragment_to_centerClassifyFragment)
         }
 
+        // 남부
+        binding.SBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_southClassifyFragment)
+        }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
