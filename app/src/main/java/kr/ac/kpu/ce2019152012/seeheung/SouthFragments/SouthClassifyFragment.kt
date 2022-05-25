@@ -23,7 +23,7 @@ class SouthClassifyFragment : Fragment() {
     // gridManager
     private lateinit var Gmanager: GridLayoutManager
 
-    // 중부 테마 정보 변수 선언
+    // 남부 테마 정보 변수 선언
     private val datas = mutableListOf<HashDataVo>()
 
     // 화면 구성
