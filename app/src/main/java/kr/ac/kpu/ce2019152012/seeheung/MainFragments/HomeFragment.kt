@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.replace
+import androidx.navigation.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestoreSettings
 import kr.ac.kpu.ce2019152012.seeheung.CenterFragments.CenterClassifyFragment
@@ -29,7 +30,7 @@ class HomeFragment : Fragment() {
     //북부
     //private val fragmentA
     //중부
-    private val fragmentB = CenterClassifyFragment()
+
     //남부
     //private val fragmentC
 
@@ -64,22 +65,17 @@ class HomeFragment : Fragment() {
 
         // 중부
         binding.CBtn.setOnClickListener {
-            fragTofrag(fragmentB)
+            it.findNavController().navigate(R.id.action_homeFragment_to_centerClassifyFragment)
         }
 
         // 남부코드로 바꿔야됨
         // 남부
         binding.NBtn.setOnClickListener {
-            Toast.makeText(requireContext(),"아직 안만들었음",Toast.LENGTH_SHORT).show()
+            it.findNavController().navigate(R.id.action_homeFragment_to_southClassifyFragment)
         }
 
     }
 
-    fun fragTofrag(fragment: Fragment){
-        val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainer,fragment)
-        transaction.commit()
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()
