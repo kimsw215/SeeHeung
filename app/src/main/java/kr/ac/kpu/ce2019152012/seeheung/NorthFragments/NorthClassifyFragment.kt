@@ -46,6 +46,7 @@ class NorthClassifyFragment : Fragment() {
     // 기능 넣는 곳
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
 
     private fun initRecycler(){
