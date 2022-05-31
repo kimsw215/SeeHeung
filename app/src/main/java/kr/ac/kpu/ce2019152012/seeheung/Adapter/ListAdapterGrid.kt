@@ -34,13 +34,13 @@ class ListAdapterGrid:
         private val Photo = itemView.findViewById<ImageView>(R.id.img_rv_photo)
         private val name = itemView.findViewById<TextView>(R.id.text_rv_name)
         private val tag1 = itemView.findViewById<TextView>(R.id.text_rv_tag_1)
-        private val tag2 = itemView.findViewById<TextView>(R.id.text_rv_tag_2)
+        //private val tag2 = itemView.findViewById<TextView>(R.id.text_rv_tag_2)
 
         fun bind(item: HashDataVo) {
             // TextView에 데이터 셋팅
             name.text = item.name
             tag1.text = item.tag1
-            tag2.text = item.tag2
+            //tag2.text = item.tag2
             Glide.with(itemView).load(item.photo).into(Photo)
             }
         }

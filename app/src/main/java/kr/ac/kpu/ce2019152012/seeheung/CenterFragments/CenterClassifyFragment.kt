@@ -76,18 +76,18 @@ class CenterClassifyFragment : Fragment() {
         }
 
         datas.apply{
-            add(HashDataVo("물왕 저수지", "#카페", "#레스토랑", R.drawable.icon_park))
-            add(HashDataVo("능곡선사유적공원", "#아름다운 풍경", "#최대 4인 숙박", R.drawable.icon_camping))
-            add(HashDataVo("영모재", "#한옥", "#고요", R.drawable.icon_hanok))
-            add(HashDataVo("관곡지", "#연꽃", "#연꽃테마파크", R.drawable.icon_water_drop))
-            add(HashDataVo("문화두리기 아지트", "#시흥문화메이커", "#생태문화도시", R.drawable.icon_landmark))
-            add(HashDataVo("하늘 휴게소", "#수요미식회맛집", "#JMT", R.drawable.icon_shopping_mall))
-            add(HashDataVo("농업기술센터 천문관", "#별자리", "#천문과학", R.drawable.icon_parchment))
-            add(HashDataVo("갯골 캠핑장", "#캠핑", "#반려견 입장가능", R.drawable.icon_camping))
-            add(HashDataVo("Art Dock", "#문화예술", "#체험문화", R.drawable.icon_museum))
-            add(HashDataVo("능곡선사유적공원", "#체험교육", "#선사유적", R.drawable.icon_park))
-            add(HashDataVo("월곶포구", "#로맨틱 데이트", "#아름다운석양", R.drawable.icon_placeholder))
-            add(HashDataVo("신세계 프리미엄 아울렛", "#스페린 건축", "#반려견 산책가능", R.drawable.icon_market))
+            add(HashDataVo("물왕 저수지", "#카페",  R.drawable.icon_park))
+            add(HashDataVo("능곡선사유적공원", "#아름다운 풍경",  R.drawable.icon_camping))
+            add(HashDataVo("영모재", "#한옥",  R.drawable.icon_hanok))
+            add(HashDataVo("관곡지", "#연꽃",  R.drawable.icon_water_drop))
+            add(HashDataVo("문화두리기 아지트", "#시흥문화메이커",  R.drawable.icon_landmark))
+            add(HashDataVo("하늘 휴게소", "#수요미식회맛집",  R.drawable.icon_shopping_mall))
+            add(HashDataVo("농업기술센터 천문관", "#별자리",  R.drawable.icon_parchment))
+            add(HashDataVo("갯골 캠핑장", "#캠핑",  R.drawable.icon_camping))
+            add(HashDataVo("Art Dock", "#문화예술",  R.drawable.icon_museum))
+            add(HashDataVo("능곡선사유적공원", "#체험교육",  R.drawable.icon_park))
+            add(HashDataVo("월곶포구", "#로맨틱 데이트",  R.drawable.icon_placeholder))
+            add(HashDataVo("신세계 프리미엄 아울렛", "#스페린 건축",  R.drawable.icon_market))
 
             listAdapter.datas = datas
             listAdapter.notifyDataSetChanged()

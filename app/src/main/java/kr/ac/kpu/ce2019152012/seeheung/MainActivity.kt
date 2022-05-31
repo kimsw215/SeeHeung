@@ -20,13 +20,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupNavigation()
-        onSupportNavigateUp()
+        //여기 지워주면 다크모드 정상작동합니다. onSupportNavigateUp()
         /*val navHostUserFragment = supportFragmentManager
             .findFragmentById(R.id.fragmentContainer) as NavHostFragment
         val navController = navHostUserFragment.navController
 //        binding.bottomNav.setupWithNavController(navController)
         NavigationUI.setupWithNavController(binding.bottomNav, navController,false)*/
     }
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment

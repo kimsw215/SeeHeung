@@ -62,14 +62,14 @@ class SouthClassifyFragment : Fragment() {
         }
 
         datas.apply{
-            add(HashDataVo("호조벌", "#대규모 간척지 ", "#조선시대 농경지", R.drawable.icon_farm))
-            add(HashDataVo("용도수목원", "#수목원", "#문화예술자연", R.drawable.icon_park))
-            add(HashDataVo("소래산 산림욕장", "#해발 299.6m", "#각종 체육시설", R.drawable.icon_camping))
-            add(HashDataVo("소래산 마애보살입상", "#고려 초기 마애불", "#근엄", R.drawable.icon_buddha))
-            add(HashDataVo("방산동 청자와 백자 요지", "#고려 초기", "#청자백자", R.drawable.icon_ceramic))
-            add(HashDataVo("삼미시장", "#포장마차거리", "#정기공연행사", R.drawable.icon_market))
-            add(HashDataVo("모랫골만지작 스튜디오", "#창작공간", "#예술가와의 만남", R.drawable.icon_palette))
-            add(HashDataVo("소전미술관", "#도자기 테마 예술관", "#야외정원까지", R.drawable.icon_parchment))
+            add(HashDataVo("호조벌", "#대규모 간척지 ",  R.drawable.icon_farm))
+            add(HashDataVo("용도수목원", "#수목원",  R.drawable.icon_park))
+            add(HashDataVo("소래산 산림욕장", "#해발 299.6m",  R.drawable.icon_camping))
+            add(HashDataVo("소래산 마애보살입상", "#고려 초기 마애불",  R.drawable.icon_buddha))
+            add(HashDataVo("방산동 청자와 백자 요지", "#고려 초기", R.drawable.icon_ceramic))
+            add(HashDataVo("삼미시장", "#포장마차거리",  R.drawable.icon_market))
+            add(HashDataVo("모랫골만지작 스튜디오", "#창작공간",  R.drawable.icon_palette))
+            add(HashDataVo("소전미술관", "#도자기 테마 예술관",  R.drawable.icon_parchment))
 
             listAdapter.datas = datas
             listAdapter.notifyDataSetChanged()
