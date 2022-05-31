@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_southClassifyFragment"
             app:destination="@id/southClassifyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_northClassifyFragment"
+            app:destination="@id/northClassifyFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -37,4 +40,9 @@
         android:name="kr.ac.kpu.ce2019152012.seeheung.SouthFragments.SouthClassifyFragment"
         android:label="south_classify"
         tools:layout="@layout/south_classify" />
+    <fragment
+        android:id="@+id/northClassifyFragment"
+        android:name="kr.ac.kpu.ce2019152012.seeheung.NorthFragments.NorthClassifyFragment"
+        android:label="north_classify"
+        tools:layout="@layout/north_classify" />
 </navigation>

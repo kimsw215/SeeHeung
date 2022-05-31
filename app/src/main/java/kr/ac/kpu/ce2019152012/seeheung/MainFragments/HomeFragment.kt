@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
         // 북부코드로 바꿔야됨
         // 북부
         binding.NBtn.setOnClickListener {
-            Toast.makeText(requireContext(),"아직 안만들었음",Toast.LENGTH_SHORT).show()
+            it.findNavController().navigate(R.id.action_homeFragment_to_northClassifyFragment)
         }
 
         // 중부
@@ -70,7 +70,7 @@ class HomeFragment : Fragment() {
 
         // 남부코드로 바꿔야됨
         // 남부
-        binding.NBtn.setOnClickListener {
+        binding.SBtn.setOnClickListener {
             it.findNavController().navigate(R.id.action_homeFragment_to_southClassifyFragment)
         }
 

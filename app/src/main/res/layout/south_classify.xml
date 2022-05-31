@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:listitem="@layout/center_item_recycler" />
+        tools:listitem="@layout/south_item_recycler" />
 
 
 </LinearLayout>

@@ -57,7 +57,6 @@ class CenterClassifyFragment : Fragment() {
         }
 
         datas.apply {
-            add(HashDataVo("오이도 빨간 등대", "#오이도 랜드마크 ", "#전망대", R.drawable.icon_lighthouse))
             add(HashDataVo("물왕 저수지", "#카페", "#레스토랑", R.drawable.icon_park))
             add(HashDataVo("능곡선사유적공원", "#아름다운 풍경", "#최대 4인 숙박", R.drawable.icon_camping))
             add(HashDataVo("영모재", "#한옥", "#고요", R.drawable.icon_hanok))
