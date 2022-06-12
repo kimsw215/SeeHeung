@@ -80,7 +80,7 @@ class CenterClassifyFragment : Fragment() {
             add(HashDataVo("능곡선사유적공원", "신석기시대 토기와 움집부터 조선시대 무덤까지 여러 유적들과 서해안 지역 문화재를 보존하고 있습니다. ",  R.drawable.icon_camping))
             add(HashDataVo("영모재", "조선 제 15대 왕 광해군의 장인인 류자신의 재실로 시흥시에서 가장 오래된 목조 건물입니다.",  R.drawable.icon_hanok))
             add(HashDataVo("관곡지", "조선시대 강희맹 선생이 우리나라에서 재배되지 않던 전당연의 씨앗을 최초로 시험재배에 성공한 곳입니다.",  R.drawable.icon_lotus))
-            add(HashDataVo("군자봉", "산봉이 흡사 꽃 중의 군자인 연꽃처럼 생긴 군자봉에서는 매년 10월 3일 500년 전통의 군자봉 성황제가 개최됩니다.", R.drawable.icon_tree))
+            add(HashDataVo("군자봉", "산봉이 흡사 꽃 중의 군자인 연꽃처럼 생긴 군자봉에선 매년 10월 3일 500년 전통의 군자봉 성황제가 개최됩니다.", R.drawable.icon_tree))
             add(HashDataVo("문화두리기 아지트", "시흥시의 시민, 전문가, 행정이 협력하여 담론을 만들어가는 문화거버넌스인 '문화두리기'의 활동공간입니다.",  R.drawable.icon_landmark))
             add(HashDataVo("하늘 휴게소", "경기도 일산과 판교에서 모두 진입 가능한 Bridge Square(브릿지 스퀘어)라고 쓰여진 시흥 하늘 휴게소입니다.",  R.drawable.icon_shopping_mall))
             add(HashDataVo("농업기술센터 천문관", "우주의 경이로움을 체험할 수 있는 주 관측실, 가상의 별자리를 볼 수 있는 돔스크린 천체투영관 등이 있습니다.",  R.drawable.icon_parchment))
