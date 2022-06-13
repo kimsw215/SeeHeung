@@ -39,8 +39,8 @@ class SearchAdapter(var searchs: ArrayList<SearchDataVo>) :
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val Searchname = itemView.findViewById<TextView>(R.id.rv_text_name)
-        private val Searchtag1 = itemView.findViewById<TextView>(R.id.rv_text_tag_1)
-        private val Searchtag2 = itemView.findViewById<TextView>(R.id.rv_text_tag_2)
+        private val Searchtag1 = itemView.findViewById<TextView>(R.id.rv_text_tag1)
+        private val Searchtag2 = itemView.findViewById<TextView>(R.id.rv_text_tag2)
         private val Searchphoto = itemView.findViewById<ImageView>(R.id.rv_img_photo)
 
         fun bind(item: SearchDataVo) {
