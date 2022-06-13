@@ -38,15 +38,22 @@
         <action
             android:id="@+id/action_northClassifyFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_northClassifyFragment_to_northDetailFragment2"
+            app:destination="@id/northDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/centerClassifyFragment"
         android:name="kr.ac.kpu.ce2019152012.seeheung.CenterFragments.CenterClassifyFragment"
         android:label="center_classify"
         tools:layout="@layout/center_classify" >
+
         <action
             android:id="@+id/action_centerClassifyFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_centerClassifyFragment_to_centerDetailFragment"
+            app:destination="@id/centerDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/southClassifyFragment"
@@ -56,5 +63,40 @@
         <action
             android:id="@+id/action_southClassifyFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_southClassifyFragment_to_southDetailFragment"
+            app:destination="@id/southDetailFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/centerDetailFragment"
+        android:name="kr.ac.kpu.ce2019152012.seeheung.CenterFragments.CenterDetailFragment"
+        android:label="ceter_detail"
+        tools:layout="@layout/fragment_center_detail">
+        <action
+            android:id="@+id/action_centerDetailFragment_to_centerClassifyFragment"
+            app:destination="@id/centerClassifyFragment" />
+        <argument
+            android:name="detail"
+            app:argType="kr.ac.kpu.ce2019152012.seeheung.ClassFile.HashDataVo" />
+    </fragment>
+    <fragment
+        android:id="@+id/northDetailFragment"
+        android:name="kr.ac.kpu.ce2019152012.seeheung.CenterFragments.NorthDetailFragment"
+        android:label="NorthDetailFragment"
+        tools:layout="@layout/fragment_north_detail">
+        <action
+            android:id="@+id/action_northDetailFragment2_to_northClassifyFragment"
+            app:destination="@id/northClassifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/southDetailFragment"
+        android:name="kr.ac.kpu.ce2019152012.seeheung.CenterFragments.SouthDetailFragment"
+        android:label="SouthDetailFragment"
+        tools:layout="@layout/fragment_south_detail">
+        <action
+            android:id="@+id/action_southDetailFragment_to_southClassifyFragment"
+            app:destination="@id/southClassifyFragment" />
+    </fragment>
+
 </navigation>

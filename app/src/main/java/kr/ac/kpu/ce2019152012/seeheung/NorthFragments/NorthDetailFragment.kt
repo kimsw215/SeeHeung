@@ -5,10 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kr.ac.kpu.ce2019152012.seeheung.databinding.FragmentSouthInfoBinding
+import kr.ac.kpu.ce2019152012.seeheung.databinding.FragmentNorthDetailBinding
 
-class SouthInfoFragment : Fragment() {
-    private var _binding : FragmentSouthInfoBinding?= null
+
+class NorthDetailFragment : Fragment() {
+    private var _binding : FragmentNorthDetailBinding?= null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class SouthInfoFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSouthInfoBinding.inflate(inflater,container,false)
+        _binding = FragmentNorthDetailBinding.inflate(inflater,container,false)
         val view = binding.root
         return view
     }

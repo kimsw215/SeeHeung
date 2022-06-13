@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import kr.ac.kpu.ce2019152012.seeheung.Adapter.ListAdapterGrid
+import kr.ac.kpu.ce2019152012.seeheung.Adapter.ListAdapter
 import kr.ac.kpu.ce2019152012.seeheung.ClassFile.HashDataVo
 import kr.ac.kpu.ce2019152012.seeheung.R
 import kr.ac.kpu.ce2019152012.seeheung.databinding.SouthClassifyBinding
@@ -17,7 +17,7 @@ class SouthClassifyFragment : Fragment() {
     private val binding get() = _binding!!
 
     // Adapter 변수 선언
-    lateinit var listAdapter : ListAdapterGrid
+    lateinit var listAdapter : ListAdapter
 
     // gridManager
     lateinit var Gmanager : GridLayoutManager
@@ -45,7 +45,7 @@ class SouthClassifyFragment : Fragment() {
     }
 
     private fun initRecycler(){
-        listAdapter = ListAdapterGrid()
+        listAdapter = ListAdapter()
 
         Gmanager = GridLayoutManager(requireContext(), RawCount)
 

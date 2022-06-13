@@ -1,26 +1,14 @@
 package kr.ac.kpu.ce2019152012.seeheung.MainFragments
 
 
-import android.content.Context
-import android.content.Intent
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.replace
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.firestoreSettings
-import kr.ac.kpu.ce2019152012.seeheung.CenterFragments.CenterClassifyFragment
-import kr.ac.kpu.ce2019152012.seeheung.CenterFragments.NorthClassifyFragment
-import kr.ac.kpu.ce2019152012.seeheung.MainActivity
 import kr.ac.kpu.ce2019152012.seeheung.R
-import kr.ac.kpu.ce2019152012.seeheung.databinding.ActivityMainBinding
 import kr.ac.kpu.ce2019152012.seeheung.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

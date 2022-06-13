@@ -4,9 +4,9 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-class InfoDataVo(
+data class SearchDataVo(
     val name: String,
-    val address1: String,
-    val address2: String
-    ):Parcelable
-
+    val tag1: String,
+    val tag2: String,
+    val photo: Int
+): Parcelable
